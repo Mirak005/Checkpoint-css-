@@ -1,0 +1,81 @@
+
+
+*{
+    margin:0;
+    padding:0;
+}
+ /* the background image did not want to work*/
+ body{
+    background-image: url("https://i.pinimg.com/originals/ae/79/48/ae79482a69cc109cfd29065ad8065858.jpg");
+    font-family:sans-serif;
+}
+header{
+    position:sticky;
+    top:0;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    background-color: lightgrey;
+    align-items: center;
+    padding:15px;
+}
+footer{
+    position:static;
+    bottom:0;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    background-color:lightgrey;
+    align-items:center;
+    padding:15px;
+}
+.credit{
+    font-family: 'Lucida Sans';
+}
+/*styling the navbar*/
+.navmenu{
+    list-style:none;
+    display:flex;
+}
+.navmenu > li{
+    margin:0 20px;
+}
+.nav-link{
+    font-weight:600;
+    font-size: x-large;
+    color:rgb(22,59,180);
+    text-decoration:none;
+}
+.nav-link:hover{
+    color:rgba(22,59,180,0.507);
+    text-decoration:underline;
+}
+.active{
+    background-color:pink;
+    padding:15px;
+}
+/*responsive navbar*/
+@media(max-width:680px){
+    header,footer{
+        justify-content:center;
+    }
+    header h1,footer h1{
+        color:rgb(22,59,180);
+        width:100%;
+        text-align:center;
+    }
+}
+/*grid display*/
+ .grid{
+    display:grid;
+    grid-template-columns: 20% 60% 20%;
+}
+.grid>div{
+    background: #eee;
+    padding:1em;
+}
+.grid>div:nth-child(odd){
+    background:#ddd;
+}
+  
+
